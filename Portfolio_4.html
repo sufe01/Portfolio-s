@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfoli 4</title>
+    <link rel="stylesheet" href="portfolio_4.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="hero">
+        <div class="main-width">
+            <header>
+                <div class="logo">
+                    <i class="fa fa-s">S</i>
+                </div>
+                <nav>
+                    <div class="hamb">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav-list">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Services</a></li>
+                        <li><a href="">Works</a></li>
+                        <li class="btn"><a href="">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+
+            <div class="container">
+                <div class="hero-text">
+                    <h3>Hi, There!</h3>
+                    <h1>I Am <span class="input"></span></h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum placeat laboriosam modi nihil facilis</p>
+                    <div class="social">
+                        <a href=""><i class="fa fa-facebook-square"></i></a>
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                        <a href=""><i class="fa fa-instagram"></i></a>
+                        <a href=""><i class="fa fa-dribbble"></i></a>
+                        <a href=""><i class="fa fa-behance"></i></a>
+                    </div>
+                    <button type="button">More About Me</button>
+                </div>
+                <div class="bottom">
+                    <p>© 2022 - All Copyrights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        
+        var hamburger = document.querySelector(".hamb");
+        var navlist = document.querySelector(".nav-list");
+        var links = document.querySelector(".nav-list li");
+
+        hamburger.addEventListener("click", function(){
+            this.classList.toggle("click");
+            navlist.classList.toggle("open");
+        });
+
+        var typed = new Typed(".input",{
+            strings:["Sufe Meo.", "Web Developer.", "UX Designer.", "photographer."],
+            typeSpeed: 70,
+            backSpeed: 60,
+            loop:true
+        });
+    </script>
+</body>
+</html>
